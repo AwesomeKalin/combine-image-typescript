@@ -19,7 +19,7 @@ export default function calcMargin(obj: margin | string | number) {
         };
     }
 
-    const { top = 0, right = 0, bottom = 0, left = 0 }: margin = obj;
+    const { top = 0, right = 0, bottom = 0, left = 0 }: margin = obj || {};
 
     return {
         top,
