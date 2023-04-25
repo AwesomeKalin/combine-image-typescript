@@ -5,7 +5,8 @@
   "author": "AwesomeKalin55",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "upload": "np --no-tests --no-cleanup"
   },
   "type": "module",
   "engines": {
