@@ -1,17 +1,19 @@
 # combine-image
 
-[![NPM](https://nodei.co/npm/combine-image.png)](https://nodei.co/npm/combine-image/)
+[![NPM](https://nodei.co/npm/combine-image.png)](https://nodei.co/npm/combine-image-typescript/)
 
 ## This project is not actively developed. Please feel free to fork or add changes as per the requirements.
 
 > Combine multiple images into a single image
 
-`combine-image` combines given images into a single image in right order. This will be helpful in a situation when you have to generate a preview of multiple images into a single image. This module is based on [`Jimp`] for image processing.
+`combine-image-typescript` combines given images into a single image in right order. This will be helpful in a situation when you have to generate a preview of multiple images into a single image. This module is based on [`Jimp`] for image processing and is based on `combine-images` but converted to typescript and uses much newer versions of libraries
 
 ## Install
 
 ```bash
-$ npm install combine-image
+$ npm install combine-image-typescript
+$ yarn add combine-image-typescript
+$ pnpm install combine-image-typescript
 ```
 
 ## Usage
