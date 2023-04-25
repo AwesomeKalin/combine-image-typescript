@@ -1,5 +1,5 @@
 import isPlainObj from 'is-plain-obj';
-import Jimp, { read } from 'jimp';
+import Jimp from 'jimp';
 import calcMargin from './utils/calcMargin.js';
 
 export default async function combineImage(images: string[] | Buffer[] | Jimp[], {
@@ -29,14 +29,14 @@ export default async function combineImage(images: string[] | Buffer[] | Jimp[],
             const { src } = img;
 
             if (typeof src === 'string') {
-                return read(src)
+                return Jimp.read(src)
                     .then((imgObj) => ({
                         img: imgObj,
                     }));
             }
         }
 
-        return read(img).then((imgObj) => ({ img: imgObj }));
+        return Jimp.read(img).then((imgObj) => ({ img: imgObj }));
     };
 
     direction = (direction === 'row');
