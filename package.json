@@ -1,6 +1,6 @@
 {
   "name": "combine-image-typescript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Combine multiple images into a single image",
   "author": "AwesomeKalin55",
   "main": "lib/index.js",
