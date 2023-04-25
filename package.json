@@ -1,20 +1,17 @@
 {
-  "name": "combine-image",
-  "version": "1.0.3",
+  "name": "combine-image-typescript",
+  "version": "0.0.0",
   "description": "Combine multiple images into a single image",
-  "author": "Danish Kamal <danish5095@gmail.com>",
+  "author": "AwesomeKalin55",
   "main": "lib/index.js",
   "scripts": {
-    "prepublish": "npm run build",
-    "prebuild": "npm run clean",
-    "build": "babel --out-dir lib src",
-    "clean": "rimraf lib"
+    "build": "tsc"
   },
   "engines": {
     "node": ">= 6"
   },
   "license": "MIT",
-  "repository": "https://github.com/danish1994/combine-image",
+  "repository": "https://github.com/AwesomeKalin/combine-image-typescript",
   "files": [
     "lib"
   ],
@@ -26,21 +23,15 @@
     "manipulation",
     "merge",
     "combine",
-    "same size"
+    "same size",
+    "typescript"
   ],
   "dependencies": {
-    "is-plain-obj": "^1.1.0",
-    "jimp": "0.2.27"
+    "is-plain-obj": "^4.1.0",
+    "jimp": "0.22.7"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-stage-1": "^6.24.1",
-    "eslint": "^4.5.0",
-    "eslint-config-prev": "^6.0.0",
-    "jest": "^20.0.4",
-    "rimraf": "^2.6.1"
+    "np": "^7.7.0",
+    "typescript": "^5.0.4"
   }
 }
