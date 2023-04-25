@@ -1,6 +1,6 @@
 # combine-image
 
-[![NPM](https://nodei.co/npm/combine-image.png)](https://nodei.co/npm/combine-image-typescript/)
+[![NPM](https://nodei.co/npm/combine-image-typescript.png)](https://nodei.co/npm/combine-image-typescript/)
 
 ## This project is not actively developed. Please feel free to fork or add changes as per the requirements.
 
