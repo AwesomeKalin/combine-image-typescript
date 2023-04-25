@@ -30,8 +30,8 @@ export default function calcMargin(obj: margin | string | number) {
 }
 
 type margin = {
-    top: number,
-    right: number,
-    bottom: number,
-    left: number,
+    top?: number,
+    right?: number,
+    bottom?: number,
+    left?: number,
 }
