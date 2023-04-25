@@ -2,19 +2,20 @@ import isPlainObj from 'is-plain-obj';
 import Jimp, { read } from 'jimp';
 import calcMargin from './utils/calcMargin.js';
 
-export default async function combineImage(images: string | Buffer | Jimp, {
+export default async function combineImage(images: string[] | Buffer[] | Jimp[], {
     direction = 'col',
     color = 0x00000000,
     offset = 0,
     margin,
     shrink = true
 }: {
-    direction: string | boolean,
-    color: number,
-    offset: number,
-    margin: number,
-    shrink: boolean
-}): Promise<Jimp> {
+    direction?: string | boolean,
+    color?: number,
+    offset?: number,
+    margin?: number,
+    shrink?: boolean
+} = {}
+): Promise<Jimp> {
     if (!Array.isArray(images)) {
         throw new TypeError('`images` must be an array that contains images');
     }
